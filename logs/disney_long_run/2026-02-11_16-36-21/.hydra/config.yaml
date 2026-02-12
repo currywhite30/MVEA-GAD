@@ -1,0 +1,52 @@
+exp_name: disney_long_run
+num_trail: 5
+batch_size: 0
+epoch: 500
+patience: 500
+verbose: 3
+gpu: 6
+model:
+  name: hega
+  backbone: HeteroGCN
+  backbone_norm: layer_norm
+  num_neigh: -1
+  hid_dim: 12
+  z_dim: 12
+  num_layers: 4
+  n_clusters: 10
+  alpha: 1.0
+  sigmoid_s: false
+  attr_loss_weight: 1.0
+  has_annealing: true
+  attr_reg_base: 0.01
+  attr_warmup_ratios: 0.7
+  clustering_weight: 1.0
+  struct_loss_weight: 1.0
+  bce_weight: 0.0
+  ranking_weight: 1.0
+  dice_weight: 0.0
+  misleading_weight: 1.0e-05
+  kl_weight: 1.0e-05
+  pos_loss_weight: 5.0
+  neg_loss_weight: 1.0
+  ranking_margin: 1.0
+  neighbor_constrain_weight: 1.0
+  lambda_attr_recon: 0.165
+  lambda_clustering_recon: 0.165
+  lambda_struct_recon: 0.33
+  lambda_neighbor_recon: 0.33
+  lambda_attr_unc: 0.33
+  lambda_clustering_unc: 0.33
+  lambda_struct_unc: 0.33
+  lambda_recon: 0.4
+  lambda_unc: 0.6
+  anomaly_func_type: gate
+optimizer:
+  name: adam
+  lr: 0.001
+  weight_decay: 0.0001
+  dropout: 0
+dataset:
+  name: disney
+  cache_dir: /data/baisongran/evidential-graph-anomaly/datasets
+  self_loop: true

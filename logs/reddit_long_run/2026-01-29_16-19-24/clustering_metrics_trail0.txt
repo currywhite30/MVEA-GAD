@@ -1,0 +1,5 @@
+--- Clustering Analysis (Trail 0) ---
+Method: K-Means Post-hoc (Fair Comparison)
+  Silhouette Score: 0.2489
+  Calinski-Harabasz: 1288.1289
+  Davies-Bouldin: 1.8410

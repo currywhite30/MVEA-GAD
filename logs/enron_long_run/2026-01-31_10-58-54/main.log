@@ -1,0 +1,4 @@
+[2026-01-31 10:58:54,536][root][INFO] - Starting the application...
+[2026-01-31 10:58:54,604][root][INFO] - >>>DOMINANTHega Initialized Successfully.
+[2026-01-31 10:58:54,607][root][INFO] - >>>src.data.data_preprocess.py|>>>DataPreprocess.get()|>>>Get dataset enron successfully!
+[2026-01-31 10:58:56,569][root][INFO] - >>>Parameter number of DOMINANTHega: 113586

@@ -1,0 +1,4 @@
+[2026-01-28 18:52:03,611][root][INFO] - Starting the application...
+[2026-01-28 18:54:39,688][root][INFO] - >>>DOMINANTHega Initialized Successfully.
+[2026-01-28 18:54:39,714][root][INFO] - >>>src.data.data_preprocess.py|>>>DataPreprocess.get()|>>>Get dataset weibo successfully!
+[2026-01-28 18:54:44,644][root][INFO] - >>>Parameter number of DOMINANTHega: 647914

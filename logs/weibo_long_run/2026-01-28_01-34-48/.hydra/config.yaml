@@ -1,0 +1,50 @@
+exp_name: weibo_long_run
+num_trail: 5
+batch_size: 0
+epoch: 500
+patience: 1000
+verbose: 3
+gpu: 0
+model:
+  name: hega
+  backbone: HeteroGCN
+  backbone_norm: layer_norm
+  num_neigh: -1
+  hid_dim: 128
+  z_dim: 128
+  num_layers: 4
+  n_clusters: 10
+  alpha: 1.0
+  sigmoid_s: false
+  attr_loss_weight: 0.0
+  has_annealing: true
+  attr_reg_base: 0.01
+  attr_warmup_ratios: 0.5
+  clustering_weight: 0.0
+  struct_loss_weight: 0.5
+  bce_weight: 0.0
+  ranking_weight: 1.0
+  dice_weight: 0.0
+  misleading_weight: 0.1
+  kl_weight: 0.1
+  ranking_margin: 1.0
+  neighbor_constrain_weight: 0.5
+  lambda_attr_recon: 0.0
+  lambda_clustering_recon: 0.0
+  lambda_struct_recon: 0.5
+  lambda_neighbor_recon: 0.5
+  lambda_attr_unc: 0.0
+  lambda_clustering_unc: 0.0
+  lambda_struct_unc: 1.0
+  lambda_recon: 0.5
+  lambda_unc: 0.5
+  anomaly_func_type: add
+optimizer:
+  name: adam
+  lr: 0.001
+  weight_decay: 0.0001
+  dropout: 0
+dataset:
+  name: weibo
+  cache_dir: /data/baisongran/evidential-graph-anomaly/datasets
+  self_loop: true

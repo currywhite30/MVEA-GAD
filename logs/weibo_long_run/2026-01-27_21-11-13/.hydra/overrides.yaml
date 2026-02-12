@@ -1,0 +1,13 @@
+- dataset=weibo
+- exp_name=weibo_long_run
+- model.hid_dim=128
+- model.z_dim=128
+- model.attr_loss_weight=1.0
+- model.has_annealing=true
+- model.clustering_weight=1.0
+- model.struct_loss_weight=1.0
+- model.bce_weight=0.0
+- model.ranking_weight=1.0
+- model.dice_weight=1.0
+- model.neighbor_constrain_weight=5e-3
+- model.anomaly_func_type=gate

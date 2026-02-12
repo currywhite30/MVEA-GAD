@@ -1,0 +1,25 @@
+defaults:
+  - _self_
+  - model: hega
+  - optimizer: adam
+  - dataset: weibo
+
+exp_name: default_exp 
+num_trail: 5
+batch_size: 0
+epoch: 500
+patience: 500
+verbose: 3
+gpu: 0
+
+hydra:
+  run:
+    # 单次运行的输出路径
+    dir: logs/${exp_name}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+  sweep:
+    # Multirun (-m) 的根目录
+    dir: logs/${exp_name}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+    # Multirun 中每个子实验的文件夹命名规则
+    subdir: ${model.name}_${optimizer.name}_lr${optimizer.lr}
+  job:
+    chdir: true

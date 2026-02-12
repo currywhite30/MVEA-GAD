@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# export CUDA_VISIBLE_DEVICES=0
+EXP_NAME="books_long_run"
+DATASET="books"
+
+## disney
+# python main.py \
+#        dataset=$DATASET \
+#        exp_name=$EXP_NAME \
+
+## books
+python main.py \
+       dataset=$DATASET \
+       exp_name=$EXP_NAME \
+       model.hid_dim=32 \
+       model.z_dim=32 \
+       model.clustering_weight=1.0 \
+       model.struct_loss_weight=0.0 \
+       model.neighbor_constrain_weight=0.0 \
+       model.lambda_clustering_recon=0.0 \
+       model.lambda_struct_recon=0.0 \
+       model.lambda_neighbor_recon=0.0 \
+       model.lambda_clustering_unc=0.33 \
+       model.lambda_struct_unc=0.0 \
+       model.anomaly_func_type=gate

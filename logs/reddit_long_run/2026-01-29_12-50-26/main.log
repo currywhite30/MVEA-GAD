@@ -1,0 +1,4 @@
+[2026-01-29 12:50:26,331][root][INFO] - Starting the application...
+[2026-01-29 12:50:26,400][root][INFO] - >>>DOMINANTHega Initialized Successfully.
+[2026-01-29 12:50:26,404][root][INFO] - >>>src.data.data_preprocess.py|>>>DataPreprocess.get()|>>>Get dataset reddit successfully!
+[2026-01-29 12:50:27,614][root][INFO] - >>>Parameter number of DOMINANTHega: 215818

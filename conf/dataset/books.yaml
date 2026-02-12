@@ -1,0 +1,3 @@
+name: books
+cache_dir: /data/baisongran/evidential-graph-anomaly/datasets
+self_loop: true

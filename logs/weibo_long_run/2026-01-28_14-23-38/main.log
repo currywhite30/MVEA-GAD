@@ -1,0 +1,16 @@
+[2026-01-28 14:23:38,384][root][INFO] - Starting the application...
+[2026-01-28 14:23:38,450][root][INFO] - >>>DOMINANTHega Initialized Successfully.
+[2026-01-28 14:23:38,462][root][INFO] - >>>src.data.data_preprocess.py|>>>DataPreprocess.get()|>>>Get dataset weibo successfully!
+[2026-01-28 14:23:40,913][root][INFO] - >>>Parameter number of DOMINANTHega: 647914
+[2026-01-28 14:23:41,805][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0000: Loss 15.8264 | AUC 0.6929 | Recall 0.1816 | Precision 0.1816 | AP 0.1324 | F1 0.1816 | Time 0.84
+[2026-01-28 14:23:42,413][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0001: Loss 14.5348 | AUC 0.6205 | Recall 0.1239 | Precision 0.1239 | AP 0.0720 | F1 0.1239 | Time 0.55
+[2026-01-28 14:23:43,146][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0002: Loss 14.0171 | AUC 0.5622 | Recall 0.0144 | Precision 0.0144 | AP 0.0467 | F1 0.0144 | Time 0.68
+[2026-01-28 14:23:43,637][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0003: Loss 13.6983 | AUC 0.5284 | Recall 0.0115 | Precision 0.0115 | AP 0.0412 | F1 0.0115 | Time 0.44
+[2026-01-28 14:23:44,130][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0004: Loss 13.4359 | AUC 0.5124 | Recall 0.0029 | Precision 0.0029 | AP 0.0396 | F1 0.0029 | Time 0.44
+[2026-01-28 14:23:44,626][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0005: Loss 13.1917 | AUC 0.5040 | Recall 0.0000 | Precision 0.0000 | AP 0.0390 | F1 0.0000 | Time 0.44
+[2026-01-28 14:23:45,123][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0006: Loss 12.9718 | AUC 0.4982 | Recall 0.0000 | Precision 0.0000 | AP 0.0386 | F1 0.0000 | Time 0.44
+[2026-01-28 14:23:45,621][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0007: Loss 12.7738 | AUC 0.4913 | Recall 0.0000 | Precision 0.0000 | AP 0.0381 | F1 0.0000 | Time 0.45
+[2026-01-28 14:23:46,508][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0008: Loss 12.5920 | AUC 0.4825 | Recall 0.0000 | Precision 0.0000 | AP 0.0374 | F1 0.0000 | Time 0.44
+[2026-01-28 14:23:47,009][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0009: Loss 12.4249 | AUC 0.4761 | Recall 0.0000 | Precision 0.0000 | AP 0.0368 | F1 0.0000 | Time 0.45
+[2026-01-28 14:23:47,507][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0010: Loss 12.2721 | AUC 0.4730 | Recall 0.0000 | Precision 0.0000 | AP 0.0366 | F1 0.0000 | Time 0.44
+[2026-01-28 14:23:48,011][root][INFO] - >>>src.model.hega.py|>>>DOMINANTHega.fit()|>>>trail 0 Epoch 0011: Loss 12.1388 | AUC 0.4724 | Recall 0.0000 | Precision 0.0000 | AP 0.0366 | F1 0.0000 | Time 0.45

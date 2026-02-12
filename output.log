@@ -1,0 +1,8 @@
+usage: main.py [--help] [--hydra-help] [--version] [--cfg {job,hydra,all}]
+               [--resolve] [--package PACKAGE] [--run] [--multirun]
+               [--shell-completion] [--config-path CONFIG_PATH]
+               [--config-name CONFIG_NAME] [--config-dir CONFIG_DIR]
+               [--experimental-rerun EXPERIMENTAL_RERUN]
+               [--info [{all,config,defaults,defaults-tree,plugins,searchpath}]]
+               [overrides ...]
+main.py: error: unrecognized arguments: --dataset --exp_name disney_long_run

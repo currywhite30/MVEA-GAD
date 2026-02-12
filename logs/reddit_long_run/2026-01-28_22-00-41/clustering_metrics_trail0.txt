@@ -1,0 +1,12 @@
+--- Clustering Analysis Report (Trail 0) ---
+Total Samples: 10984
+Number of Predicted Clusters: 10
+
+[Internal Validity] (Based on Embedding & Predicted Clusters):
+  Silhouette Score (Higher is better): -0.0110
+  Calinski-Harabasz (Higher is better): 234.1830
+  Davies-Bouldin    (Lower is better): 3.0702
+
+[External Validity] (Pred Clusters vs Ground Truth Anomaly Labels):
+  Adjusted Rand Index (ARI): -0.0007
+  Normalized Mutual Info (NMI): 0.0021
