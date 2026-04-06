@@ -270,7 +270,8 @@ def dominant_hega_recon_loss(
     nu = torch.clamp(nu, min=eps)
     alpha_nig = torch.clamp(alpha_nig, min=1 + eps) 
     beta = torch.clamp(beta, min=eps)
-    alpha_cluster = torch.clamp(alpha_cluster, min=eps)
+    if alpha_cluster is not None:
+        alpha_cluster = torch.clamp(alpha_cluster, min=eps)
 
     attr_loss = None
     struct_total_loss = None
@@ -406,7 +407,7 @@ def dominant_hega_recon_loss(
         "nu": torch.mean(nu, dim=1),
         "alpha_nig": torch.mean(alpha_nig, dim=1),
         "beta": torch.mean(beta, dim=1),
-        "alpha_cluster": torch.mean(alpha_cluster, dim=1),
+        "alpha_cluster": torch.mean(alpha_cluster, dim=1) if alpha_cluster is not None else None,
         "alpha_struct": avg_alpha_neighbor,
         "beta_struct": avg_beta_neighbor,
     }

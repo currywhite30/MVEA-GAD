@@ -9,3 +9,10 @@ output.log
 # Local test scripts (not synced)
 test.py
 test.sh
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Too large for GitHub single-file limit (100MB); keep locally or use Git LFS / release asset
+datasets/inj_flickr.pt

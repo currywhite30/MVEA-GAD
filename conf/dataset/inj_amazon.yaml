@@ -1,0 +1,3 @@
+name: inj_amazon
+cache_dir: /data/baisongran/content-1/datasets
+self_loop: true

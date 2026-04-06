@@ -2,7 +2,7 @@ defaults:
   - _self_
   - model: hega
   - optimizer: adam
-  - dataset: weibo
+  - dataset: books
 
 exp_name: default_exp 
 num_trail: 5
@@ -10,7 +10,7 @@ batch_size: 0
 epoch: 500
 patience: 500
 verbose: 3
-gpu: 0
+gpu: 6
 
 hydra:
   run:

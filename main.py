@@ -6,7 +6,7 @@ import logging
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-@hydra.main(config_path="/data/baisongran/evidential-graph-anomaly/conf", config_name="config", version_base=None)
+@hydra.main(config_path="/data/baisongran/content-1/conf", config_name="config", version_base=None)
 def main(config):
     # LoggerConfig().setup_logger()
     logger = logging.getLogger()

@@ -33,10 +33,14 @@ class BetaStructureDecoder(nn.Module):
                                   act=act,
                                   norm=backbone_norm, 
                                   **kwargs)
+        # self.proj_alpha = nn.Linear(in_dim, hid_dim)
+        # self.proj_beta = nn.Linear(in_dim, hid_dim)
 
     def forward(self, x, edge_index):
         h_alpha = self.proj_alpha(x, edge_index)
         h_beta = self.proj_beta(x, edge_index)
+        # h_alpha = self.proj_alpha(x)
+        # h_beta = self.proj_beta(x)
         pred_alpha = h_alpha @ h_alpha.T
         pred_beta = h_beta @ h_beta.T
         alpha = F.softplus(pred_alpha) + 1.0 + 1e-4

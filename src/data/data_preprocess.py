@@ -82,14 +82,16 @@ class DataPreprocessor:
         return nodes_features
 
     def preprocess(self, data):
-        if self.dataset_name in ['books', 'disney', 'enron', 'reddit', 'weibo']:
+        if self.dataset_name in ['inj_cora', 'inj_amazon', 'inj_flickr', 'books', 'disney', 'enron', 'reddit', 'weibo']:
             features = data.x.numpy()
             edge_index = data.edge_index.numpy()
             adj_data = np.ones_like(edge_index[0])
             adj = sp.csr_matrix((adj_data, (edge_index[0], edge_index[1])), shape=[features.shape[0], features.shape[0]])
             adj = sp.lil_matrix(adj)
+            data.y[data.y > 0] = 1
             labels = data.y.numpy()
             labels = labels.astype(int)
+            # labels[labels > 0] = 1
         else:
             pass
         ### 预处理过程
