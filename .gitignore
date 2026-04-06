@@ -1,0 +1,11 @@
+# Editor / local IDE
+.vscode/
+
+# Runtime logs and outputs
+logs/
+nohup.out
+output.log
+
+# Local test scripts (not synced)
+test.py
+test.sh
